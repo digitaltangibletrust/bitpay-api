@@ -37,12 +37,16 @@ bitpay.getBTCTxLedger(params, function(err, response, ledger) {
 // middleware
 app.post('receive/invoice/path', bitpay.invoiceListener(), function(req, res) {
   // .. utilize req.invoice
+
+  // ... send status 200 once you have successfully processed the invoice, all other responses will cause bitpay to retry until 200 is received
+  res.json(200, {});
 });
 ```
 
 Reference
 ==
 https://github.com/bitpay/nodejs-client
+https://bitpay.com/downloads/bitpayApi.pdf
 
 Test
 ==
