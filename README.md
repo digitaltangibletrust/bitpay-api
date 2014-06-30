@@ -46,6 +46,7 @@ app.post('receive/invoice/path', bitpay.invoiceListener(), function(req, res) {
 Reference
 ==
 https://github.com/bitpay/nodejs-client
+
 https://bitpay.com/downloads/bitpayApi.pdf
 
 Test
