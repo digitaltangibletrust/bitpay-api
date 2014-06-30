@@ -5,6 +5,7 @@ The bitpay api wrapped for NodeJS/JavaScript.
 
 Usage
 ==
+```javascript
 var Bitpay = require('bitpay-api');
 
 var bitpay = new BitPay(options);
@@ -25,7 +26,7 @@ bitpay.getInvoice(invoiceId, function(err, response, invoice) {
 app.post('receive/invoice/path', bitpay.invoiceListener(), function(req, res) {
   // .. utilize req.invoice
 });
-
+```
 
 Reference
 ==
@@ -33,5 +34,10 @@ https://github.com/bitpay/nodejs-client
 
 Test
 ==
+```
 npm test
-Note: to test against the actual bitpay api do: `apiKey=<Your bitpay api key> npm test`
+```
+Note: to test against the actual bitpay api do:
+```
+apiKey=<Your bitpay api key> npm test
+```
