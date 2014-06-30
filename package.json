@@ -11,7 +11,7 @@
     "debug": "~0.7.4",
     "request": "2.34.0",
     "validator": "3.16.0",
-    "lodash": "latest"
+    "lodash": "2.4.1"
   },
   "devDependencies": {
     "should": "3.3.1",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dttgold/bitpay-api"
+    "url": "https://github.com/digitaltangibletrust/bitpay-api"
   },
   "main": "index",
   "scripts": {
