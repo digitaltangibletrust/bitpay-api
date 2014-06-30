@@ -22,6 +22,18 @@ bitpay.getInvoice(invoiceId, function(err, response, invoice) {
   // .. utilize invoice
 });
 
+bitpay.getBTCBestBidRates(function(err, response, rates) {
+  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
+  // response.statusCode should equal 200
+  // .. utilize rates
+});
+
+bitpay.getBTCTxLedger(params, function(err, response, ledger) {
+  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
+  // response.statusCode should equal 200
+  // .. utilize ledger
+});
+
 // middleware
 app.post('receive/invoice/path', bitpay.invoiceListener(), function(req, res) {
   // .. utilize req.invoice
