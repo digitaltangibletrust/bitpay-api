@@ -1,0 +1,34 @@
+{
+  "name": "bitpay-api",
+  "description": "bitpay-api api wrapper for JavaScript/NodeJS",
+  "version": "0.0.1",
+  "author": {
+    "name": "Aaron Caswell",
+    "email": "aaron@captureplay.com",
+    "url": "https://github.com/porkchop"
+  },
+  "dependencies": {
+    "debug": "~0.7.4",
+    "request": "2.34.0",
+    "validator": "3.16.0",
+    "lodash": "latest"
+  },
+  "devDependencies": {
+    "should": "3.3.1",
+    "mocha": "1.18.2"
+  },
+  "keywords": [
+    "bitcoin",
+    "cryptocurrency",
+    "payment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dttgold/bitpay-api"
+  },
+  "main": "index",
+  "scripts": {
+    "test": "make test"
+  },
+  "license": "MIT"
+}
