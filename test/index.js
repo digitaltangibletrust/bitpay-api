@@ -78,13 +78,11 @@ describe('bitpay', function() {
         
         var bitpay = new BitPay({apiKey: apiKey});
 
-        bitpay.createInvoice(testInvoice, function(err, response, invoice) {
+        bitpay.createInvoice(testInvoice, function(err, invoice) {
           should.not.exist(err);
-          response.statusCode.should.equal(200);
           invoice.id.should.be.ok;
-          bitpay.getInvoice(invoice.id, function(err, response, _invoice) {
+          bitpay.getInvoice(invoice.id, function(err, _invoice) {
             should.not.exist(err);
-            response.statusCode.should.equal(200);
             _invoice.id.should.be.equal(invoice.id);
             done();
           });
@@ -98,9 +96,8 @@ describe('bitpay', function() {
         
         var bitpay = new BitPay({apiKey: apiKey});
 
-        bitpay.getBTCBestBidRates(function(err, response, rates) {
+        bitpay.getBTCBestBidRates(function(err, rates) {
           should.not.exist(err);
-          response.statusCode.should.equal(200);
           _.isArray(rates).should.be.ok;
           done();
         });
@@ -120,9 +117,8 @@ describe('bitpay', function() {
           c: 'BTC',
           startDate: '2014-01-01',
           endDate: '2014-01-31'
-        }, function(err, response, ledger) {
+        }, function(err, ledger) {
           should.not.exist(err);
-          response.statusCode.should.equal(200);
           _.isArray(ledger).should.be.ok;
           ledger.length.should.be.above(0);
           done();

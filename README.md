@@ -10,27 +10,19 @@ var Bitpay = require('bitpay-api');
 
 var bitpay = new BitPay(options);
 
-bitpay.createInvoice(order, function(err, response, invoice) {
-  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
-  // response.statusCode should equal 200
+bitpay.createInvoice(order, function(err, invoice) {
   // .. utilize invoice
 });
 
-bitpay.getInvoice(invoiceId, function(err, response, invoice) {
-  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
-  // response.statusCode should equal 200
+bitpay.getInvoice(invoiceId, function(err, invoice) {
   // .. utilize invoice
 });
 
-bitpay.getBTCBestBidRates(function(err, response, rates) {
-  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
-  // response.statusCode should equal 200
+bitpay.getBTCBestBidRates(function(err, rates) {
   // .. utilize rates
 });
 
-bitpay.getBTCTxLedger(params, function(err, response, ledger) {
-  // this callback follows the request (https://github.com/mikeal/request) api callback protocol
-  // response.statusCode should equal 200
+bitpay.getBTCTxLedger(params, function(err, ledger) {
   // .. utilize ledger
 });
 
