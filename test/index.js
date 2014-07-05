@@ -20,16 +20,6 @@ describe('bitpay', function() {
 
       bitpay.should.be.ok;
     });
-
-    it('should not create an API instance with insufficient params', function(done) {
-      try {
-        var bitpay = new BitPay();
-        done('should not have created');
-      }
-      catch(e) {
-        done();
-      }
-    });
   });
 
   describe('#invoiceListener', function() {
