@@ -81,10 +81,10 @@ describe('bitpay', function() {
     });
 
     describe('#getBTCBestBidRates', function() {
-      it('should get the best bid rates', function(done) {
+      it('should get the best bid rates without an apiKey', function(done) {
         if(!apiKey) return done();
         
-        var bitpay = new BitPay({apiKey: apiKey});
+        var bitpay = new BitPay();
 
         bitpay.getBTCBestBidRates(function(err, rates) {
           should.not.exist(err);
