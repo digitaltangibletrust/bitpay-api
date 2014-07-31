@@ -16,7 +16,7 @@ Pull requests are welcomed!
 
 ```js
 var Bitpay = require('bitpay-api');
-var bitpay = new BitPay(options);
+var bitpay = new Bitpay(options);
 ```
 
 This generates a new API client. It accepts options arguments.
