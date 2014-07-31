@@ -199,7 +199,7 @@ bitpay.getBTCTxLedger(params, function(err, ledger) {
 <a name="invoiceListener"></a>
 #### invoiceListener (Middleware)
 
-Create a Bitpay invoice from order. This is Express/Connect middleware. Place this on your POST receive invoice update route. Your request object will be populated with an `invoice` object (`req.invoice`). This is the same invoice type described earlier.
+Process an invoice POSTback update from Bitpay. This is Express/Connect middleware. Place this on your POST receive invoice update route. Your request object will be populated with an `invoice` object (`req.invoice`). This is the same invoice type described earlier.
 
 ```js
 // middleware
