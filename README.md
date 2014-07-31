@@ -3,6 +3,13 @@ bitpay-api
 
 The bitpay api wrapped for NodeJS/JavaScript.
 
+Why we created it?
+=========
+We created this API wrapper so you could access the equivalent rest api through simple asynchronous functions with all the power provided by Bitpay's direct API. This API uses simple method calls without all of the hassle of writing API request urls, body and query strings.
+
+Pull requests are welcomed!
+
+
 Usage
 ==
 ```javascript
