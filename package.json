@@ -1,7 +1,7 @@
 {
   "name": "bitpay-api",
   "description": "bitpay-api api wrapper for JavaScript/NodeJS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Aaron Caswell",
     "email": "aaron@captureplay.com",
